@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\RoleController; // Asegúrate de que esta línea 
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\PatientController;
 use App\Http\Controllers\Admin\DoctorController;
+use App\Http\Controllers\Admin\SupportController;
 
 Route::get('/',function(){
     return view('admin.dashboard');
@@ -17,3 +18,4 @@ Route::resource('roles', RoleController::class); // Correcto: "resource"
 Route::resource('users', UserController::class); // Ruta para la gestión de usuarios
 Route::resource('patients', PatientController::class); // Ruta para la gestión de pacientes
 Route::resource('doctors', DoctorController::class); // Ruta para la gestión de doctores
+Route::resource('support', SupportController::class);
